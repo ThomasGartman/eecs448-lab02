@@ -32,7 +32,19 @@ int LinkedList<T>::size() const
 	/** TODO 
 		Fix this method
 	*/
-	return(0);
+	if(isEmpty())
+	{
+		return 0;
+	}
+
+        int count = 1;
+	Node<T>* temp = m_front;
+	while(temp != nullptr)
+	{
+		temp = temp->getNext();
+		count++;
+	}
+	return(count);
 }
 
 template <typename T>
