@@ -29,10 +29,8 @@ bool LinkedList<T>::isEmpty() const
 template <typename T>
 int LinkedList<T>::size() const
 {
-	/** TODO 
-		Fix this method
-	*/
-	if(isEmpty())
+	return m_size;
+	/*if(isEmpty())
 	{
 		return 0;
 	}
@@ -44,7 +42,7 @@ int LinkedList<T>::size() const
 		temp = temp->getNext();
 		count++;
 	}
-	return(count);
+	return(count);*/
 }
 
 template <typename T>
